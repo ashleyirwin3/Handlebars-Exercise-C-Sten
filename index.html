@@ -7,9 +7,20 @@
 <body>
   <h1>Here's a random user</h1>
 
-<script id="hbId" type="text/x-handlebars-template"></script>
 
 <!-- output div -->
+<div id="user_output"></div>
+
+<script id="random_user" type="text/x-handlebars-template">
+  <div class="user">
+  <h4>Random User Name: {{ results.0.name.title }} {{ results.0.name.first }} {{ results.0.name.last }}</h4>
+  <p>Street Address: {{ results.0.location.street }}</p>
+  <p>City: {{ results.0.location.city }}</p>
+  <p>State: {{ results.0.location.state}}</p>
+  <p>Postal: {{ results.0.location.postcode}}</p>
+  <p>Email: {{ results.0.email}}</p>
+  <img src="{{{results.0.picture.medium}}}">
+</script>
 
 <!-- handlebars script -->
 <script src="/bower_components/handlebars/handlebars.js" type="text/javascript"></script>

@@ -1,9 +1,11 @@
-1. Fork and clone this repo
+<!-- 1. Fork and clone this repo
 1. ```bower init```
 1. install your bower dependencies, don't forget to --save
 1. create a .gitignore and ignore your bower components
 1. include script tags for jQuery, handlebars, and myJavascript.js
-1. create a handlebars script tag in index.html, make sure it has an id associated with it
+1. create a handlebars script tag in index.html, make sure it has an id associated with it -->
+
+
 1. within the handlebars script tag, write a basic summary of our random user (name, address, and e-mail). Syling is up to you,
 1. all randomUser info needs to be in {{}}, but there's no rule against hard coding info while you're figuring out how you want it to look
   - HINT: use dot notation for accessing items in an array instead of bracket notation ({{results.0.name.title}})
